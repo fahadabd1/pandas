@@ -1492,7 +1492,7 @@ def _identify_bad_rows(values, dtype):
             elif dtype.kind == "f":  # float types
                 float(val)
             elif dtype.kind == "b":  # boolean
-                # Boolean conversion is more complex, skip for now
+                # Complex pass it until we fix again
                 pass
         except (ValueError, TypeError):
             bad_indices.add(idx)
